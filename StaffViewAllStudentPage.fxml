@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="509.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.StaffViewAllStudentPageController">
+   <children>
+      <Button fx:id="backBtn" layoutX="792.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="72.0" text="Back" />
+      <TableView fx:id="searchResult" layoutX="16.0" layoutY="84.0" prefHeight="407.0" prefWidth="848.0">
+        <columns>
+          <TableColumn fx:id="siswamailc" prefWidth="75.0" text="Siswamail" />
+          <TableColumn fx:id="matricNumberc" prefWidth="92.0" text="Matric Number" />
+            <TableColumn fx:id="namec" prefWidth="113.60003662109375" text="Name" />
+            <TableColumn fx:id="programmec" prefWidth="140.79998779296875" text="Programme" />
+            <TableColumn fx:id="genderc" prefWidth="55.199951171875" text="Gender" />
+            <TableColumn fx:id="nationalityc" prefWidth="83.20001220703125" text="Nationality" />
+            <TableColumn fx:id="icNumberc" prefWidth="100.0" text="IC Number" />
+            <TableColumn fx:id="muetc" prefWidth="40.800048828125" text="MUET" />
+            <TableColumn fx:id="creditsc" prefWidth="44.79998779296875" text="Credits" />
+            <TableColumn fx:id="statusc" prefWidth="100.800048828125" text="Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchtf" layoutX="116.0" layoutY="44.0" prefHeight="26.0" prefWidth="243.0" promptText="Enter student name or matric number" />
+      <Label layoutX="16.0" layoutY="48.0" text="Search Student:" />
+      <Button fx:id="searchBtn" layoutX="377.0" layoutY="44.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="72.0" text="Search" />
+   </children>
+</AnchorPane>
